@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: yellow;
+    
+}
+.mylist{
+    display: flex;
+    list-style: none;
+    gap: 5%;
+    padding: 3%;
+   justify-content: center;
+}
+
+.mylist li a{
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.mylist li p{
+
+    font-size: larger;
+}
+
+.logo{
+    position: absolute;
+    width: 102px;
+  
+}
+.banerimg{
+    width: 100%;
+    height: 495px;
+}
+.video{
+    padding: 1%;
+    
+}
+.card img{
+    width: 350px;
+    height: 200px;
+    margin-left: 10%;
+    transition: all 1s;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+}
+
+.cardcontainer{
+    display: flex;
+   
+
+}
+
+.card{
+    border: 1px solid green;
+    padding: 2%;
+}
+
+.title{
+    background-color: black;
+    color: aliceblue;
+    padding: 1%;
+}
+
+.last{
+    background-color: black;
+    color: white;
+    font-size: medium;
+}
+
+/* this is use for mobile width */
+@media(min-width:320px)and (max-width:480px){
+    .cardcontainer{
+        display: block;
+    }
+
+    .card img{
+        margin-left: 2%;
+    }
+
+    .logo{
+        width: 50px;
+    }
+    .mylist{
+        gap: 3%;
+       
+    }
+    .mylist li a{
+        font-size: 15px;
+    }
+}
+/* this is use for tablet width */
+@media(min-width:481px)and (max-width:768px){
+    .cardcontainer{
+        display: block;
+    }
+
+    .card img{
+        margin-left: 9%;
+        width: 500px;
+    }
+    .video{
+       margin-left: 15%;
+    }
+}  
